@@ -1,7 +1,4 @@
-# Project 76
-## Milestone 4
-- Sql script tables.sql under sql folder
-- Milestone 4 pdf in the repository 
+
 
 ## Summary 
 We are building a Race Event and Logistics Manager application. This would help Runners get access to the result of past races and donations. Organizers are able to keep track of each race, race course, volunteers, runners, sponsors. 
