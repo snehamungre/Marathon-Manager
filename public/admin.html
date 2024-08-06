@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dropdown Menu with Tables</title>
+    <link rel="stylesheet" type="text/css" href="admin.css" />
+  </head>
+
+  <header>
+    <script src="header.js"></script>
+  </header>
+
+  <div class="dropdown-admin">
+    <span id="dropdowTitle"></span>
+    <div class="dropdown-admin-content">
+      <a
+        href="#"
+        onclick="loadTable('/volunteer/volunteertable', 'volunteerTable')"
+        >Volunteers</a
+      >
+      <a href="#" onclick="loadTable('/sponsor/sponsortable','sponsorTable')"
+        >Sponsors</a
+      >
+      <a
+        href="#"
+        onclick="loadTable('marathon/marathon-table', 'marathonTable')"
+        >Marathons</a
+      >
+      <a href="#" onclick="loadTable('/runner/runner-table', 'runnerTable')"
+        >Runners</a
+      >
+      <a href="#" onclick="loadTable('/vendor/vendortable','vendorTable')"
+        >Vendors</a
+      >
+
+      <a href="#" onclick="loadTable('/registration/totalRunners-by-event','totalRunnersTable')"
+        >Total Registrations</a
+      >
+    </div>
+  </div>
+  <body>
+
+    <div class="bar">
+      <button id="addButton" onclick="createAddForm('/volunteer/volunteertable', 'volunteerTable')">Add Entry</button>
+      <div id="greaterThan">
+        <input id="greaterVal" type="integer" placeholder=0 />
+        <button onclick="handleFilterButtonClick()">Filter</button>
+      </div>
+    </div>
+
+    <div class="form-popup" id="addEntriesForm">
+      <input
+        type="radio"
+        name="formSelector"
+        id="volunteerForm"
+        checked
+        onclick="switchAddForm('/volunteer/volunteertable', 'volunteerTable')"
+      />
+      <label for="volunteerForm">Volunteers</label>
+
+      <input
+        type="radio"
+        name="formSelector"
+        id="sponsorsForm"
+        onclick="switchAddForm('/sponsor/sponsortable','sponsorTable')"
+      />
+      <label for="sponsorsForm">Sponsors</label>
+
+      <input
+        type="radio"
+        name="formSelector"
+        id="marathonForm"
+        onclick="switchAddForm('marathon/marathon-table', 'marathonTable')"
+      />
+      <label for="marathonForm">Marathons</label>
+
+      <input
+        type="radio"
+        name="formSelector"
+        id="runnerForm"
+        onclick="switchAddForm('/runner/runner-table', 'runnerTable')"
+      />
+      <label for="runnerForm">Runners</label>
+
+      <input
+        type="radio"
+        name="formSelector"
+        id="vendorForm"
+        onclick="switchAddForm('/vendor/vendortable','vendorTable')"
+      />
+      <label for="vendorForm">Vendors</label>
+
+      <h3>Add Values</h3>
+      <form class="form-container"></form>
+    </div>
+
+    <table id="volunteerTable">
+      <thead>
+        <tr>
+          <!--Table head, need to be adjusted accordingly to align with your own.-->
+          <th>ID</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Contact</th>
+          <th>Edit/Delete</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <table id="marathonTable">
+      <thead>
+        <tr>
+          <!--Table head, need to be adjusted accordingly to align with your own.-->
+          <th>Name</th>
+          <th>Location</th>
+          <th>Date</th>
+          <th>Conditions</th>
+          <th>Edit/Delete</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <table id="sponsorTable">
+      <thead>
+        <tr>
+          <!--Table head, need to be adjusted accordingly to align with your own.-->
+          <th>Name</th>
+          <th>Contribution</th>
+          <th>Edit/Delete</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <table id="vendorTable">
+      <thead>
+        <tr>
+          <!--Table head, need to be adjusted accordingly to align with your own.-->
+          <th>Name</th>
+          <th>Contact</th>
+          <th>Stall No.</th>
+          <th>Type</th>
+          <th>Edit/Delete</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <table id="runnerTable">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Contact</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Gender</th>
+          <th>Age</th>
+          <th>Edit/Delete</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <table id="totalRunnersTable">
+      <thead>
+        <tr>
+          <!--Table head, need to be adjusted accordingly to align with your own.-->
+          <th>Marathon Name</th>
+          <th>Marathon Date</th>
+          <th>Total Runners Regsitered</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <script src="admin.js"></script>
+  </body>
+</html>

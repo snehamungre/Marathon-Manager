@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Dropdown Menu with Tables</title>
+  <link rel="stylesheet" type="text/css" href="admin.css">
+</head>
+
+<header>
+  <script src="header.js"></script>
+</header>
+
+<div class="dropdown-admin">
+  <span id="dropdowTitle"></span>
+  <div class="dropdown-admin-content">
+    <a href="#" onclick="loadTable('/comprises/comprises-by-year?year=2023', '2023');
+                         loadCountTable('/comprises/group-by-year?year=2023', 'Count');">2023</a>
+    <a href="#" onclick="loadTable('/comprises/comprises-by-year?year=2022','2022');
+                         loadCountTable('/comprises/group-by-year?year=2022', 'Count');">2022</a>
+    <a href="#" onclick="loadTable('/comprises/comprises-by-year?year=2021','2021')
+                         loadCountTable('/comprises/group-by-year?year=2021', 'Count');">2021</a>
+    <a href="#" onclick="loadTable('/comprises/comprises-by-year?year=2020', '2020')
+                         loadCountTable('/comprises/group-by-year?year=2020', 'Count');">2020</a>
+  </div>
+</div>
+
+<body>
+  <table id="2023">
+    <thead>
+      <tr>
+        <th>Event Name</th>
+        <th>Event Date</th>
+        <th>Distance</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <table id="2022">
+    <thead>
+      <tr>
+        <th>Event Name</th>
+        <th>Event Date</th>
+        <th>Distance</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+    <table id="2021">
+    <thead>
+      <tr>
+        <th>Event Name</th>
+        <th>Event Date</th>
+        <th>Distance</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+    <table id="2020">
+    <thead>
+      <tr>
+        <th>Event Name</th>
+        <th>Event Date</th>
+        <th>Distance</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <table id="Count">
+    <thead>
+      <tr>
+        <th>Distance Type</th>
+        <th>Count</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script src="pastyears.js">
+    
+  </script>
+</body>
+
+</html>

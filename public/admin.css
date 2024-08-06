@@ -1,0 +1,137 @@
+.edit-form div {
+  margin-bottom: 10px;
+}
+
+.edit-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Styles for header */
+header {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto auto;
+  width: 80%;
+  height: 50px;
+  z-index: 9999;
+}
+
+
+
+.bar input[id="greaterVal"] {
+  width: 200px;
+  padding: 5px;
+  margin: 0 10px;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.bar button {
+  padding: 8px 15px;
+  margin: 0 5px;
+}
+
+/* Styles for dropdown-admin */
+.dropdown-admin {
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 1px solid rgb(34, 33, 33);
+}
+
+.dropdown-admin-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  left: 50%;
+  transform: translatex(-50%);
+}
+
+.dropdown-admin:hover .dropdown-admin-content {
+  text-align: center;
+  display: block;
+  padding: 20px 0;
+}
+
+.dropdown-admin-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-admin-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Styles for tables */
+.tables {
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 30px auto;
+  position: inherit;
+  width: 80%;
+  border: 1px solid #ddd;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Form styles */
+.form-popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #ccc;
+  background-color: #fff;
+  padding: 20px;
+  z-index: 9;
+}
+
+.form-container {
+  max-width: 300px;
+  text-align: center;
+}
+
+.form-container input[type=text] {
+  width: calc(100% - 10px);
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.form-container .btn {
+  padding: 8px 12px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.form-container .cancel {
+  background-color: #ccc;
+  margin-left: 10px;
+}

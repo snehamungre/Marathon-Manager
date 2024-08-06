@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Results page with ability to filter</title>
+  <link rel="stylesheet" type="text/css" href="marathonTable.css">
+</head>
+
+<header>
+  <script src="header.js"></script>
+</header>
+
+<body>
+  <form id="filterForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+
+    <label for="city">City:</label>
+    <input type="text" id="city" name="city">
+
+    <label for="date">Date:</label>
+    <input type="date" id="date" name="date">
+
+    <button type="button" onclick="filterTable()">Search</button>
+  </form>
+  <table id="marathonTable">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Location</th>
+        <th>Date</th>
+        <th>View Results</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script src="marathonTable.js"></script>
+</body>
+
+</html>

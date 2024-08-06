@@ -1,0 +1,20 @@
+{
+  "name": "project_m5c8m_n0s6i_y6d0f",
+  "version": "1.0.0",
+  "description": "## Summary  We are building a Race Event and Logistics Manager application. This would help Runners get access to the result of past races and donations. Organizers are able to keep track of each race, race course, volunteers, runners, sponsors.",
+  "main": "index.js",
+  "scripts": {
+    "devStart": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "oracledb": "^6.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

@@ -1,0 +1,90 @@
+
+
+.edit-form div {
+    margin-bottom: 10px;
+}
+
+.edit-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+  /* Styles for header */
+    header {
+      text-align: center;
+      padding: 20px 0;
+    }
+    
+    .dropdown-container {
+      text-align: center;
+    }
+
+    /* Styles for dropdown-admin */
+    .dropdown-admin {
+        text-align: center;
+        padding: 20px 0;
+        border-bottom: 1px solid rgb(34, 33, 33);
+        display: inline-block; 
+        margin-right: 20px; 
+      }
+
+    .dropdown-admin-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      left: 50%;
+      transform: translatex(-50%);
+    }
+
+    .dropdown-admin:hover .dropdown-admin-content {
+      text-align: center;
+      display: block;
+      padding: 20px 0;
+    }
+
+    .dropdown-admin-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-admin-content a:hover {
+      background-color: #f1f1f1;
+    }
+
+    .dropdown-admin:last-child {
+        margin-right: 0; 
+      }
+
+    /* Styles for tables */
+    .tables {
+      text-align: center;
+    }
+
+    /* Placeholder styles for tables */
+    table {
+      border-collapse: collapse;
+      margin: 30px auto;
+      position: inherit;
+      width: 80%;
+      border: 1px solid #ddd;
+    }
+
+    th,
+    td {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    .hidden {
+      display: none;
+    }
